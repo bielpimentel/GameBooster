@@ -75,21 +75,24 @@ header nav ul {
     transition: 200ms;
 }
 
-.op-serv .triangulo {
-    padding-bottom: 4px;
-}
-
-.op-serv p:hover {
+.op-serv:hover {
     text-shadow: 0 0 15px #c0c0c0, 0 0 10px #adadad, 0 0 4px #868686;
 }
 
-.triangulo {
-    width: 2px;
-    height: 2px;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 8px solid #D9D9D9;
-    border-radius: 1px;
+.op-serv:hover .triangulo img {
+    -webkit-filter: drop-shadow(0px 0px 15px #c0c0c0);
+    filter: drop-shadow(0px 0px 15px #c0c0c0);
+    -webkit-filter: drop-shadow(0px 0px 10px #c7c7c7);
+    filter: drop-shadow(0px 0px 10px #c7c7c7);
+    -webkit-filter: drop-shadow(0px 0px 4px #ffffff);
+    filter: drop-shadow(0px 0px 4px #ffffff);
+}
+
+.triangulo img {
+    width: 10px;
+    height: 10px;
+    padding-left: 3px;
+    transition: all 250ms;
 }
 
 ul li .servico{
